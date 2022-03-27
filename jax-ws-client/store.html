@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<script src="js/store.js"></script>
+<div class="w3-container">
+    <h2>List Product</h2>
+    <a href="form.html">Create new</a>
+    <table class="w3-table-all w3-hoverable">
+        <thead>
+        <tr class="w3-light-grey">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody id="my-table-data">
+        </tbody>
+    </table>
+    <form action=""></form>
+</div>
+<form name="cart-form" class="container content-section">
+    <h2 class="section-header">CART</h2>
+    <div class="cart-row">
+        <span name="product_Id" class="cart-item cart-header cart-column">Name</span>
+        <span class="cart-price cart-header cart-column">Price</span>
+        <span  name="quantity"  class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div class="cart-items">
+    </div>
+
+    <div name="totalPrice" class="cart-total">
+        <strong  class="cart-total-title" >Total</strong>
+        <span class="cart-total-price">$0</span>
+    </div>
+
+
+
+    <button class="btn btn-primary btn-purchase" id="btn-submit" type="button">PURCHASE</button>
+</form>
+
+</body>
+
+</html>
